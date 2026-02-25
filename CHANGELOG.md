@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/k0va1/whoop-mcp/compare/v0.1.0...v0.1.1) (2026-02-25)
+
+
+### Bug Fixes
+
+* oauth2 flow ([77ee621](https://github.com/k0va1/whoop-mcp/commit/77ee6210307d2f71831587de15b37b0a2b633152))
+
 ## [0.1.0](https://github.com/k0va1/whoop-mcp/compare/v0.0.1...v0.1.0) (2026-02-25)
 
 
