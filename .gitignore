@@ -1,0 +1,5 @@
+.env
+.whoop_tokens.json
+/.bundle/
+/.claude/
+/tmp/
