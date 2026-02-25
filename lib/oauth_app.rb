@@ -1,9 +1,11 @@
 require "sinatra/base"
 require "faraday"
 require "json"
+require "securerandom"
 
 class OAuthApp < Sinatra::Base
   set :host_authorization, permitted: :any
+  enable :sessions
 
   AUTHORIZE_URL = "https://api.prod.whoop.com/oauth/oauth2/auth"
   TOKEN_URL = "https://api.prod.whoop.com/oauth/oauth2/token"
@@ -13,13 +15,21 @@ class OAuthApp < Sinatra::Base
       halt 404, "OAuth not configured"
     end
 
+    state = SecureRandom.hex(4)
+    session[:oauth_state] = state
+
     redirect "#{AUTHORIZE_URL}?response_type=code" \
              "&client_id=#{ENV["WHOOP_CLIENT_ID"]}" \
              "&redirect_uri=#{Rack::Utils.escape(ENV["WHOOP_REDIRECT_URI"])}" \
-             "&scope=#{Rack::Utils.escape(ENV.fetch("WHOOP_SCOPES", "read:recovery read:cycles read:workout read:sleep read:profile read:body_measurement"))}"
+             "&scope=#{Rack::Utils.escape(ENV.fetch("WHOOP_SCOPES", "offline read:recovery read:cycles read:workout read:sleep read:profile read:body_measurement"))}" \
+             "&state=#{state}"
   end
 
   get "/callback" do
+    unless params["state"] && params["state"] == session.delete(:oauth_state)
+      halt 400, error_page("Invalid or missing state parameter")
+    end
+
     code = params["code"]
 
     unless code && !code.empty?
