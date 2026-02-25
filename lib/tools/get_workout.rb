@@ -4,7 +4,7 @@ module Tools
     description "Get the workout for the specified ID"
     input_schema(
       properties: {
-        workout_id: {type: "string", description: "UUID of the workout to retrieve"}
+        workout_id: {type: "string", format: "uuid", description: "UUID of the workout to retrieve"}
       },
       required: ["workout_id"]
     )

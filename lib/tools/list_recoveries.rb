@@ -5,9 +5,9 @@ module Tools
     input_schema(
       properties: {
         limit: {type: "number", description: "Limit on the number of recoveries returned (max 25, default 10)"},
-        start: {type: "string", description: "Return recoveries that occurred after or during (inclusive) this time (ISO 8601 date-time)"},
-        end: {type: "string", description: "Return recoveries that intersect this time or ended before (exclusive) this time (ISO 8601 date-time)"},
-        next_token: {type: "string", description: "Pagination token from a previous response"}
+        start: {type: "string", format: "date-time", description: "Return recoveries that occurred after or during (inclusive) this time. If not specified, the response will not filter recoveries by a minimum time."},
+        end: {type: "string", format: "date-time", description: "Return recoveries that intersect this time or ended before (exclusive) this time. If not specified, end will be set to now."},
+        next_token: {type: "string", description: "Optional next token from the previous response to get the next page. If not provided, the first page in the collection is returned"}
       }
     )
 

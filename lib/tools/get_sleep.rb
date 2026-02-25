@@ -4,7 +4,7 @@ module Tools
     description "Get the sleep for the specified ID"
     input_schema(
       properties: {
-        sleep_id: {type: "string", description: "UUID of the sleep to retrieve"}
+        sleep_id: {type: "string", format: "uuid", description: "UUID of the sleep to retrieve"}
       },
       required: ["sleep_id"]
     )
