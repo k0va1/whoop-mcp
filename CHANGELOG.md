@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.1.2](https://github.com/k0va1/whoop-mcp/compare/v0.1.2...v0.1.2) (2026-02-25)
+
+
+### Bug Fixes
+
+* align tool input schemas with WHOOP API docs ([1f78df0](https://github.com/k0va1/whoop-mcp/commit/1f78df0deeafb20bcedb0909d218e9e456610ca5))
+* reset release-please manifest to 0.1.1 ([0b6245b](https://github.com/k0va1/whoop-mcp/commit/0b6245b960615b0f900a34422a0cd5368d452cb7))
+* set release-please manifest to 0.1.2 ([607b8e3](https://github.com/k0va1/whoop-mcp/commit/607b8e356ceacc101af89e547b939174f7f33676))
+* use form-encoded body for OAuth token refresh ([99e6dce](https://github.com/k0va1/whoop-mcp/commit/99e6dceef8098180ab4a43d2776faf950656e4d3))
+
+
+### Miscellaneous Chores
+
+* sync manifest to 0.1.2 ([a78e88c](https://github.com/k0va1/whoop-mcp/commit/a78e88c84004539c2de8c153a058915a2ddcbb91))
+
 ## [0.1.2](https://github.com/k0va1/whoop-mcp/compare/v0.1.1...v0.1.2) (2026-02-25)
 
 
