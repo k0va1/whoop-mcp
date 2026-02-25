@@ -13,8 +13,8 @@ module Whoop
 
     def refresh!
       response = Faraday.post(TOKEN_URL) do |req|
-        req.headers["Content-Type"] = "application/json"
-        req.body = JSON.generate(
+        req.headers["Content-Type"] = "application/x-www-form-urlencoded"
+        req.body = URI.encode_www_form(
           grant_type: "refresh_token",
           client_id: @client_id,
           client_secret: @client_secret,
