@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/k0va1/whoop-mcp/compare/v0.1.2...v0.1.2) (2026-02-25)
+
+
+### Miscellaneous Chores
+
+* sync manifest to 0.1.2 ([a78e88c](https://github.com/k0va1/whoop-mcp/commit/a78e88c84004539c2de8c153a058915a2ddcbb91))
+
 ## [0.1.1](https://github.com/k0va1/whoop-mcp/compare/v0.1.0...v0.1.1) (2026-02-25)
 
 
