@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.1](https://github.com/k0va1/whoop-mcp/compare/v0.1.0...v0.1.1) (2026-02-25)
+
+
+### Bug Fixes
+
+* oauth2 flow ([77ee621](https://github.com/k0va1/whoop-mcp/commit/77ee6210307d2f71831587de15b37b0a2b633152))
+* use number type in input schemas for n8n compatibility ([2274ee4](https://github.com/k0va1/whoop-mcp/commit/2274ee439b7e3f9ff6f057d60764cf1410bbb8a6))
+
 ## [0.1.0](https://github.com/k0va1/whoop-mcp/compare/v0.0.1...v0.1.0) (2026-02-25)
 
 
