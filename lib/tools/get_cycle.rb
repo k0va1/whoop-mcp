@@ -4,7 +4,7 @@ module Tools
     description "Get the physiological cycle for the specified ID"
     input_schema(
       properties: {
-        cycle_id: {type: "integer", description: "ID of the cycle to retrieve"}
+        cycle_id: {type: "number", description: "ID of the cycle to retrieve"}
       },
       required: ["cycle_id"]
     )

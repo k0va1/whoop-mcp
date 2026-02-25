@@ -4,7 +4,7 @@ module Tools
     description "Get the sleep for the specified cycle ID"
     input_schema(
       properties: {
-        cycle_id: {type: "integer", description: "ID of the cycle to retrieve sleep for"}
+        cycle_id: {type: "number", description: "ID of the cycle to retrieve sleep for"}
       },
       required: ["cycle_id"]
     )

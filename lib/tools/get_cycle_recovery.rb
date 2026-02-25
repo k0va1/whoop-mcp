@@ -4,7 +4,7 @@ module Tools
     description "Get the recovery for a cycle"
     input_schema(
       properties: {
-        cycle_id: {type: "integer", description: "ID of the cycle to retrieve recovery for"}
+        cycle_id: {type: "number", description: "ID of the cycle to retrieve recovery for"}
       },
       required: ["cycle_id"]
     )

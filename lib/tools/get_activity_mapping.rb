@@ -4,7 +4,7 @@ module Tools
     description "Lookup the V2 UUID for a given V1 activity ID"
     input_schema(
       properties: {
-        activity_v1_id: {type: "integer", description: "V1 Activity ID"}
+        activity_v1_id: {type: "number", description: "V1 Activity ID"}
       },
       required: ["activity_v1_id"]
     )

@@ -4,7 +4,7 @@ module Tools
     description "Get all recoveries for a user, paginated. Results are sorted by start time of the related sleep in descending order."
     input_schema(
       properties: {
-        limit: {type: "integer", description: "Limit on the number of recoveries returned (max 25, default 10)"},
+        limit: {type: "number", description: "Limit on the number of recoveries returned (max 25, default 10)"},
         start: {type: "string", description: "Return recoveries that occurred after or during (inclusive) this time (ISO 8601 date-time)"},
         end: {type: "string", description: "Return recoveries that intersect this time or ended before (exclusive) this time (ISO 8601 date-time)"},
         next_token: {type: "string", description: "Pagination token from a previous response"}
