@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/k0va1/whoop-mcp/compare/v0.1.2...v0.1.3) (2026-02-25)
+
+
+### Features
+
+* trigger release ([3798ed9](https://github.com/k0va1/whoop-mcp/commit/3798ed93a4e9276ea52cbc3e0c51c5fa74e36445))
+
 ## [0.1.2](https://github.com/k0va1/whoop-mcp/compare/v0.1.1...v0.1.2) (2026-02-25)
 
 
